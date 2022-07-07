@@ -1,0 +1,26 @@
+.menu__description {
+    display: flex;
+    align-items: baseline;
+
+    .menu {
+        margin-bottom: 3em;
+        ul {
+            padding: 0;
+
+            li {
+                font-size: .8em;
+                margin-bottom: 1em;
+                padding: 0;
+
+                a {
+                    color: #7D7D7D;
+                    text-decoration: none;
+                }
+
+                a:hover {
+                    color: #1B1B1B;
+                }
+            }
+        }
+    }
+}

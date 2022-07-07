@@ -1,0 +1,50 @@
+header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em;
+    margin-bottom: 3.1em;
+}
+
+.header__logo-name {
+    display: flex;
+
+    .header__logo {
+        width: 2.5em;
+        height: 2.5em;
+    }
+
+    .header__name {
+        margin-left: 1.5em;
+
+        .surname {
+            font-size: .8em;
+            font-weight: 600;
+        }
+
+        .name__patronymic {
+            color: #7D7D7D;
+            font-size: .8em;
+        }
+    }
+}
+
+.header__btn-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    cursor: pointer;
+
+    .top-menu {
+        background-color: black;
+        width: 2em;
+        height: .1em;
+        margin-bottom: .5em;
+    }
+
+    .bottom-menu {
+        background-color: black;
+        width: 1.5em;
+        height: .1em;
+    }
+}

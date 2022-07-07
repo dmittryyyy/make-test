@@ -1,0 +1,61 @@
+.button {
+    margin-top: 64px;
+
+    h2 {
+        margin-bottom: 32px;
+    }
+
+    .buttons {
+        display: flex;
+        margin-bottom: 32px;
+
+        p {
+            color: #7D7D7D;
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 24px;
+        }
+
+        button {
+            color: #FFFFFF;
+            font-size: 16px;
+            line-height: 24px;
+            padding: 16px 32px;
+            border-radius: 80px;
+            margin-right: 164px;
+            cursor: pointer;
+        }
+
+        .interactive-btn {
+            background: linear-gradient(90deg, rgba(220,127,237,1) 0%, rgba(63,41,226,1) 100%);
+            transition: 2s;
+        }
+
+        .interactive-btn:hover {
+            background: linear-gradient(90deg, rgba(220,127,237,1) 50%, rgba(63,41,226,1) 100%);
+            transition: 2s;
+        }
+        
+        .interactive-btn:active {
+            background: linear-gradient(90deg, rgba(220,127,237,1) 100%, rgba(63,41,226,1) 100%);
+            transition: 2s;
+        }
+
+        .hover-btn {
+            background: linear-gradient(90deg, rgba(220,127,237,1) 50%, rgba(63,41,226,1) 100%);
+        }
+
+        .active-btn {
+            background: linear-gradient(90deg, rgba(220,127,237,1) 100%, rgba(63,41,226,1) 100%);
+        }
+
+        .desabled-btn {
+            p {
+                margin: 32px 0 24px 0;
+            }
+            button {
+                background-color: #CBCBCC;
+            }
+        }
+    }
+}

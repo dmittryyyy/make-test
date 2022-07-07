@@ -1,0 +1,86 @@
+.checkboxs {
+    h2 {
+        margin: 64px 0 32px 0;
+    }
+
+    .checkboxs-wrapper {
+        display: flex;
+        align-items: center;
+
+        .check-cube,
+        .check-radio {
+            display: flex;
+            flex-direction: column;
+            margin-right: 38px;
+        }
+
+        .custom-checkbox,
+        .custom-radio {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+        }
+
+        .custom-checkbox+label,
+        .custom-radio+label {
+            display: inline-flex;
+            align-items: center;
+            user-select: none;
+            cursor: pointer;
+            margin-bottom: 24px;
+        }
+
+        .custom-checkbox+label::before,
+        .custom-radio+label::before {
+            content: '';
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+            flex-grow: 0;
+            border: 2px solid #AEADAE;
+            margin-right: 16px;
+        }
+
+        .custom-radio+label::before {
+            border-radius: 80px;
+        }
+
+        .custom-checkbox:checked+label::before {
+            border-color: #3E29E3;
+            background-color: #3E29E3;
+            background-image: url('../../img/checkbox/check.svg') no-repeat center;
+        }
+
+        .custom-radio:checked+label::before {
+            border-color: #3E29E3;
+            background-color: #FFFFFF;
+            background-image: url('../../img/checkbox/radio.svg') no-repeat center;
+        }
+
+        .radio-focus+label::before {
+            border-color: #3E29E3;
+            background-color: #FFFFFF;
+            background-image: url('../../img/checkbox/radio.svg') no-repeat center;
+        }
+
+        .check-focus+label::before {
+            border-color: #3E29E3;
+            background-color: #FFFFFF;
+            background-image: url('../../img/checkbox/radio.svg') no-repeat center;
+        }
+
+        .custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+            border-color: #3E29E3;
+        }
+
+        .custom-radio:not(:disabled):not(:checked)+label:hover::before {
+            border-color: #3E29E3;
+        }
+
+        .radio-hover+label::before,
+        .check-hover+label::before {
+            border-color: #3E29E3;
+        }
+    }
+}
