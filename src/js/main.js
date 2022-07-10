@@ -1,4 +1,4 @@
-import { dropDown } from './module/dropDown';
-import { ui } from './module/ui';
-import { typography } from './module/typography';
-import { menu } from './module/menu';
+const dropDown = require('./module/dropDown');
+const ui = require('./module/ui');
+const typography = require('./module/typography');
+const menu = require('./module/menu');

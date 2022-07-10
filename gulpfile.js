@@ -18,6 +18,8 @@ const img = require('./tasks/img');
 const font = require('./tasks/font');
 const server = require('./tasks/server');
 
+const deploy = require('./tasks/deploy');
+
 //observer
 const watcher = () => {
     $.gulp.watch($.path.html.watch, html).on('all', $.browserSync.reload);
@@ -45,6 +47,7 @@ exports.scss = scss;
 exports.js = js;
 exports.img = img;
 exports.font = font;
+exports.deploy = deploy;
 
 //build
 exports.default = $.app.isProd

@@ -51,25 +51,25 @@
         .custom-checkbox:checked+label::before {
             border-color: #3E29E3;
             background-color: #3E29E3;
-            background-image: url('../../img/checkbox/check.svg') no-repeat center;
+            background-image: url('../img/checkbox/check.svg') no-repeat center;
         }
 
         .custom-radio:checked+label::before {
             border-color: #3E29E3;
             background-color: #FFFFFF;
-            background-image: url('../../img/checkbox/radio.svg') no-repeat center;
+            background-image: url('../img/checkbox/radio.svg') no-repeat center;
         }
 
         .radio-focus+label::before {
             border-color: #3E29E3;
             background-color: #FFFFFF;
-            background-image: url('../../img/checkbox/radio.svg') no-repeat center;
+            background-image: url('../img/checkbox/radio.svg') no-repeat center;
         }
 
         .check-focus+label::before {
             border-color: #3E29E3;
             background-color: #FFFFFF;
-            background-image: url('../../img/checkbox/radio.svg') no-repeat center;
+            background-image: url('../img/checkbox/radio.svg') no-repeat center;
         }
 
         .custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
