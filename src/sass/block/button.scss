@@ -1,60 +1,86 @@
-.button {
+.buttons-block {
     margin-top: 64px;
-
-    h2 {
-        margin-bottom: 32px;
-    }
 
     .buttons {
         display: flex;
-        margin-bottom: 32px;
+        flex-wrap: wrap;
+
+        button {
+            background-color: #CBCBCC;
+        }
 
         p {
             color: #7D7D7D;
             font-size: 14px;
-            line-height: 20px;
-            margin-bottom: 24px;
+            margin-top: 32px;
         }
 
         button {
             color: #FFFFFF;
             font-size: 16px;
-            line-height: 24px;
             padding: 16px 32px;
             border-radius: 80px;
             margin-right: 164px;
+            margin-top: 24px;
             cursor: pointer;
         }
 
         .interactive-btn {
-            background: linear-gradient(90deg, rgba(220,127,237,1) 0%, rgba(63,41,226,1) 100%);
-            transition: 2s;
+            background: linear-gradient(90deg, rgba(220, 127, 237, 1) 0%, rgba(63, 41, 226, 1) 100%);
         }
 
         .interactive-btn:hover {
-            background: linear-gradient(90deg, rgba(220,127,237,1) 50%, rgba(63,41,226,1) 100%);
-            transition: 2s;
+            background: linear-gradient(90deg, rgba(220, 127, 237, 1) 50%, rgba(63, 41, 226, 1) 100%);
         }
-        
+
         .interactive-btn:active {
-            background: linear-gradient(90deg, rgba(220,127,237,1) 100%, rgba(63,41,226,1) 100%);
-            transition: 2s;
+            background: linear-gradient(90deg, rgba(220, 127, 237, 1) 100%, rgba(63, 41, 226, 1) 100%);
         }
 
         .hover-btn {
-            background: linear-gradient(90deg, rgba(220,127,237,1) 50%, rgba(63,41,226,1) 100%);
+            background: linear-gradient(90deg, rgba(220, 127, 237, 1) 50%, rgba(63, 41, 226, 1) 100%);
         }
 
         .active-btn {
-            background: linear-gradient(90deg, rgba(220,127,237,1) 100%, rgba(63,41,226,1) 100%);
+            background: linear-gradient(90deg, rgba(220, 127, 237, 1) 100%, rgba(63, 41, 226, 1) 100%);
         }
+    }
+}
 
-        .desabled-btn {
-            p {
-                margin: 32px 0 24px 0;
-            }
+@media (max-width: 1000.98px) {
+    .buttons-block {
+        .buttons {
             button {
-                background-color: #CBCBCC;
+                margin-right: 82px;
+            }
+        }
+    }
+}
+
+@media (max-width: 900.98px) {
+    .buttons-block {
+        .buttons {
+            button {
+                margin-right: 41px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .buttons-block {
+        .subTitle {
+            text-align: center;
+        }
+        .buttons {
+            justify-content: center;
+
+            button {
+                margin-right: 20.5px;
+            }
+
+            .check-cube {
+                margin-right: -16px;
             }
         }
     }

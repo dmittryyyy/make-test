@@ -1,14 +1,25 @@
 .container-menu {
-  margin-top: -1000px;
+  margin-top: -800px;
   position: absolute;
   background: url('../../img/menu/bgMenu.png') no-repeat;
   padding: 8px;
-  transition: .3s;
+  transition: .2s;
+  width: 100%;
+  max-height: 756px;
 
   .wrapper-menu {
-    background-color: #FFFFFF;
-    
+    display: flex;
+    justify-content: space-between;
+
+    .btnClose {
+      margin-right: 63px;
+      cursor: pointer;
+      max-height: 24px;
+    }
+
     .menu {
+      background-color: #FFFFFF;
+      width: 60%;
       padding: 20px 0 30px 50px;
 
       .header-menu {
@@ -25,6 +36,7 @@
       .content-menu {
         display: flex;
         flex-direction: column;
+        margin-bottom: 200px;
 
         .title-menu {
           font-weight: bold;
@@ -39,7 +51,6 @@
         .number {
           font-weight: bold;
           font-size: 18px;
-          margin-bottom: 290px;
         }
       }
 
@@ -62,6 +73,55 @@
 }
 
 .container-menu.show {
-  margin-top: 0px;
-  transition: .3s;
+  margin-top: 0;
+}
+
+@media (max-width: 767.98px) {
+  .container-menu {
+    .wrapper-menu {
+      .menu {
+        padding: 20px 0 20px 20px;;
+        width: 70%;
+
+        .header-menu {
+          margin-bottom: 20px;
+        }
+
+        .content-menu {
+          margin-bottom: 60px;
+        }
+      }
+
+      .btnClose {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 379.98px) {
+  .container-menu {
+    .wrapper-menu {
+      .menu {
+        padding: 10px 0 10px 10px;;
+        width: 80%;
+
+        .header-menu {
+          margin-bottom: 10px;
+        }
+
+        .content-menu {
+          margin-bottom: 15px;
+
+          .title-menu {
+            font-size: 24px;
+          }
+        }
+      }
+
+      .btnClose {
+        margin-right: 10px;
+      }
+    }
+  }
 }

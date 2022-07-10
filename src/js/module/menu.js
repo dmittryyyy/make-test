@@ -1,23 +1,25 @@
 const menu = document.querySelector('.container-menu');
 const btnShowMenu = document.querySelector('.header__btn-menu');
-const dontMenu = document.querySelector('.container');
+const btnCloseMenu = document.querySelector('.btnClose');
+
+const showMenu = () => {
+  menu.classList.add('show');
+};
+
+const closeMenu = () => {
+  menu.classList.remove('show');
+};
 
 btnShowMenu.addEventListener('click', () => {
-    menu.classList.add('show');
-    document.body.style.overflowY = "hidden";
+  showMenu();
 });
 
-menu.addEventListener('click', (e) => {
-    const modal = e.target.closest('.modal__inner');
-    if (!modal) {
-      modalForm.classList.remove('active');
-      body.classList.remove('lock')
-    };
-  });
-
 document.addEventListener('keyup', (e) => {
-    if (e.code === "Escape") {
-    menu.classList.remove('show');
-    document.body.style.overflowY = "scroll";
-    };
-  });
+  if (e.code === "Escape") {
+    closeMenu();
+  }
+});
+
+btnCloseMenu.addEventListener('click', () => {
+  closeMenu();
+});

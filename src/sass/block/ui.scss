@@ -1,15 +1,14 @@
 .ui {
+    margin-bottom: 64px;
 
-    p {
-        color: #7D7D7D;
-        font-size: 14px;
-        line-height: 20px;
-        margin-bottom: 40px;
+    .subTitle {
+        h2 {
+            font-weight: bold;
+        }
     }
 
     label {
         font-size: 12px;
-        line-height: 20px;
         color: #7D7D7D;
     }
 
@@ -17,22 +16,31 @@
         border-bottom: 2px solid #AEADAE;
         padding: 6px 0;
         font-size: 16px;
-        line-height: 24px;
         width: 280px;
         margin: 0 32px 6px 0;
     }
 
+    .inputs {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+
     .interactive-input,
     .input-error,
-    .input-focus {
+    .input-focus,
+    .input-hover {
         display: flex;
         flex-direction: column;
+
+        p {
+            margin-bottom: 20px;
+            color: #7D7D7D;
+            font-size: 14px;
+        }
     }
 
     .input-focus {
-        p {
-            margin-bottom: 20px;
-        }
 
         input {
             border-bottom: 4px solid #3E29E3;
@@ -40,10 +48,6 @@
     }
 
     .interactive-input {
-        p {
-            margin-bottom: 20px;
-        }
-
         .prompt {
             opacity: 0;
         }
@@ -70,11 +74,6 @@
 
         .error {
             color: #E80F3B;
-            margin: 0 0 64px 0;
-        }
-
-        p {
-            margin: 48px 0 16px 0;
         }
     }
 
@@ -88,13 +87,21 @@
         }
     }
 
-    .inputs {
-        display: flex;
-        align-items: center;
-        align-items: flex-end;
-
-        .input-hover {
+    .input-hover {
+        input {
             border-bottom: 2px solid #3E29E3;
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .ui {
+        .subTitle {
+            text-align: center;
+        }
+        
+        .inputs {
+            justify-content: center;
         }
     }
 }

@@ -227,3 +227,15 @@
         }
     }
 }
+
+@media (max-width: 767.98px) {
+    .typography {
+        .grid__subTitle {
+            text-align: center;
+        }
+
+        .tabs-nav {
+            justify-content: center;
+        }
+    }
+}

@@ -12,29 +12,26 @@
         --bs-accordion-btn-focus-box-shadow: none;
         --bs-body-color: #7D7D7D;
         --bs-accordion-btn-icon: url('../../img/accordion/show.svg');
+        --bs-accordion-btn-padding-x: 0.25rem;
+        --bs-accordion-body-padding-x: 0.25rem;
 
         .accordion-item {
+            .open {
+                strong {
+                    color: #3E29E3;
+                }
+            }
 
             .show {
                 border-radius: 0;
                 border-bottom: 2px solid #3E29E3;
             }
-        }
 
-        .accordion-item {
             .hover {
+                border-bottom: 1px solid #3E29E3;
+
                 strong {
                     color: #1B1B1B;
-                }
-            }
-        }
-
-        .accordion-item {
-            .open {
-                border-bottom: 2px solid #3E29E3;
-
-                strong {
-                    color: #3E29E3;
                 }
             }
         }
@@ -43,6 +40,18 @@
             strong {
                 color: #1B1B1B;
             }
+
+            .accordion-header {
+                border-bottom: 1px solid #3E29E3;
+            }
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .accordion-wrapper {
+        h2 {
+            text-align: center;
         }
     }
 }
