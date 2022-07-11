@@ -7945,7 +7945,6 @@ footer {
 .container-menu {
   margin-top: -100rem;
   position: absolute;
-  padding: 0.5rem;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
@@ -7969,6 +7968,10 @@ footer {
   max-height: 1.5rem;
 }
 
+.container-menu .wrapper-menu .btnClose span {
+  display: none;
+}
+
 .container-menu .wrapper-menu .menu {
   background: #FFFFFF;
   width: 60%;
@@ -7989,8 +7992,8 @@ footer {
   align-items: center;
 }
 
-.container-menu .wrapper-menu .menu .header-menu .header-text {
-  margin-left: 3.5rem;
+.container-menu .wrapper-menu .menu .header-menu p {
+  margin-left: 3rem;
 }
 
 .container-menu .wrapper-menu .menu .content-menu {
@@ -14296,7 +14299,7 @@ footer {
   }
 
   .container-menu .wrapper-menu .menu .header-menu p {
-    margin-left: 0.5rem;
+    margin-left: 1.5rem;
   }
 
   .container-menu .wrapper-menu .menu .content-menu {
@@ -14313,6 +14316,10 @@ footer {
 
   .container-menu .wrapper-menu .btnClose {
     margin-right: 0.6rem;
+  }
+
+  .container-menu .wrapper-menu .btnClose span {
+    color: #000;
   }
 
 @supports (-webkit-appearance:none) {
@@ -14677,12 +14684,16 @@ footer {
   }
 
   .container-menu .wrapper-menu .menu {
-    padding: 15px 0 15px 15px;
+    padding: 1rem;
     width: 75%;
   }
 
   .container-menu .wrapper-menu .menu .header-menu {
     margin-bottom: 1.25rem;
+  }
+
+  .container-menu .wrapper-menu .menu .header-menu p {
+    margin-left: 1.5rem;
   }
 
   .container-menu .wrapper-menu .menu .content-menu {
@@ -14837,8 +14848,8 @@ footer {
 
 @media (max-width: 420.98px) {
   .container-menu .wrapper-menu .menu {
-    padding: 0.6rem;
-    width: 75%;
+    padding: 1rem;
+    width: 100%;
   }
 
   .container-menu .wrapper-menu .menu .header-menu {
@@ -14850,7 +14861,18 @@ footer {
   }
 
   .container-menu .wrapper-menu .btnClose {
-    margin-right: 0.6rem;
+    position: absolute;
+    right: 0;
+    margin: 2.3rem 2rem;
+  }
+
+  .container-menu .wrapper-menu .btnClose img {
+    display: none;
+  }
+
+  .container-menu .wrapper-menu .btnClose span {
+    display: block;
+    color: #000;
   }
 
 @supports (-webkit-appearance:none) {
@@ -14876,20 +14898,34 @@ footer {
   }
 
   .container-menu .wrapper-menu .menu {
-    padding: 0.3rem;
-    width: 90%;
+    padding: 1rem;
   }
 
   .container-menu .wrapper-menu .menu .header-menu {
     margin-bottom: 0.3rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-right: 2rem;
+  }
+
+  .container-menu .wrapper-menu .menu .header-menu p {
+    margin-left: 1rem;
   }
 
   .container-menu .wrapper-menu .menu .content-menu {
-    margin-bottom: 1rem;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .container-menu .wrapper-menu .menu .footer-menu {
+    font-size: 14px;
   }
 
   .container-menu .wrapper-menu .btnClose {
-    margin-right: 0.3rem;
+    position: absolute;
+    right: 0;
+    margin: 2.3rem 1.5rem;
   }
 
 @supports (-webkit-appearance:none) {
