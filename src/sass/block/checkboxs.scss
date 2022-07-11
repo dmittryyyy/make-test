@@ -1,6 +1,6 @@
 .checkboxs {
     h2 {
-        margin: 64px 0 32px 0;
+        margin: 4rem 0 2rem 0;
     }
 
     .checkboxs-wrapper {
@@ -12,7 +12,7 @@
         .check-radio {
             display: flex;
             flex-direction: column;
-            margin-right: 38px;
+            margin-right: 2.3rem;
             padding-left: 0;
         }
 
@@ -29,23 +29,23 @@
             align-items: center;
             user-select: none;
             cursor: pointer;
-            margin-bottom: 24px;
+            margin-bottom: 1rem;
         }
 
         .custom-checkbox+label::before,
         .custom-radio+label::before {
             content: '';
             display: inline-block;
-            width: 24px;
-            height: 24px;
+            width: 1.5rem;
+            height: 1.5rem;
             flex-shrink: 0;
             flex-grow: 0;
             border: 2px solid #AEADAE;
-            margin-right: 16px;
+            margin-right: 1rem;
         }
 
         .custom-radio+label::before {
-            border-radius: 80px;
+            border-radius: 5rem;
         }
 
         .custom-checkbox:checked+label::before {
@@ -97,7 +97,7 @@
             justify-content: center;
 
             .check-cube {
-                margin-right: 18px;
+                margin-right: 1.1rem;
             }
         }
     }

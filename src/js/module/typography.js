@@ -3,7 +3,7 @@ const tabs = document.querySelectorAll('.tab-list-item');
 
 const btnMobile = document.getElementById('btnMobile');
 
-if (document.documentElement.clientWidth < 375.98) {
+if (document.documentElement.clientWidth < 420.98) {
     tabsBtn.forEach((item) => {
         item.classList.remove('btnActive');
     });

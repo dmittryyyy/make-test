@@ -1,71 +1,81 @@
 .container-menu {
-  margin-top: -800px;
+  margin-top: -100rem;
   position: absolute;
-  background: url('../img/menu/bgMenu.png') no-repeat;
-  padding: 8px;
+  padding: .5rem;
   transition: .2s;
   width: 100%;
-  max-height: 756px;
+  max-height: 48rem;
 
   .wrapper-menu {
     display: flex;
     justify-content: space-between;
+    background-image: url('../img/menu/bgMenu.png') no-repeat;
+    background-size: 100% 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 
     .btnClose {
-      margin-right: 63px;
+      margin: 2rem 3.9rem 0 0;
       cursor: pointer;
-      max-height: 24px;
+      max-height: 1.5rem;
     }
 
     .menu {
       background-color: #FFFFFF;
       width: 60%;
-      padding: 20px 0 30px 50px;
+      margin: 0.5rem;
+      padding: 1rem 0 2rem 3rem;
 
       .header-menu {
         display: flex;
         justify-content: flex-start;
-        margin-bottom: 60px;
+        margin-bottom: 3.75rem;
         align-items: center;
 
-        .subtitle {
-          margin-left: 64px;
+        .header-text {
+          margin-left: 3.5rem;
         }
       }
 
       .content-menu {
         display: flex;
         flex-direction: column;
-        margin-bottom: 200px;
+        margin-bottom: 12.5rem;
 
         .title-menu {
           font-weight: bold;
-          font-size: 32px;
-          margin-bottom: 24px;
+          font-size: 2rem;
+          margin-bottom: 1.5rem;
         }
 
         .description {
-          margin-bottom: 32px;
+          margin-bottom: 2rem;
         }
 
         .number {
           font-weight: bold;
-          font-size: 18px;
+          font-size: 1.1rem;
         }
       }
 
       .footer-menu {
         display: flex;
         align-items: center;
-        color: #3E29E3;
 
         .icon {
-          width: 40px;
-          margin-right: 24px;
+          width: 2.5rem;
+          margin-right: 1.5rem;
           border-radius: 100%;
           -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
           -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
           box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+        }
+
+        a {
+          color: #3E29E3;
+          font-weight: bolder;
         }
       }
     }
@@ -76,24 +86,85 @@
   margin-top: 0;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 992.98px) {
   .container-menu {
     .wrapper-menu {
       .menu {
-        padding: 20px 0 20px 20px;;
+        padding: 15px 0 15px 15px;
+        ;
         width: 70%;
 
         .header-menu {
-          margin-bottom: 20px;
+          margin-bottom: 1.75rem;
+
+          p {
+            margin-left: 0.5rem;
+          }
         }
 
         .content-menu {
-          margin-bottom: 60px;
+          margin-bottom: 2.5rem;
+
+          .title-menu {
+            font-size: 1.5rem;
+          }
+
+          .number {
+            font-size: 1rem;
+          }
         }
       }
 
       .btnClose {
-        margin-right: 10px;
+        margin-right: .6rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .container-menu {
+    .wrapper-menu {
+      .menu {
+        padding: 15px 0 15px 15px;
+        ;
+        width: 75%;
+
+        .header-menu {
+          margin-bottom: 1.25rem;
+        }
+
+        .content-menu {
+          margin-bottom: 3.5rem
+        }
+      }
+
+      .btnClose {
+        margin-right: .6rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 420.98px) {
+  .container-menu {
+    .wrapper-menu {
+      .menu {
+        padding: .6rem;
+        ;
+        width: 75%;
+
+        .header-menu {
+          margin-bottom: 1.25rem;
+        }
+
+        .content-menu {
+          margin-bottom: 1.5rem
+        }
+      }
+
+      .btnClose {
+        margin-right: .6rem;
       }
     }
   }
@@ -103,24 +174,20 @@
   .container-menu {
     .wrapper-menu {
       .menu {
-        padding: 10px 0 10px 10px;;
-        width: 80%;
+        padding: .3rem;
+        width: 90%;
 
         .header-menu {
-          margin-bottom: 10px;
+          margin-bottom: .3rem;
         }
 
         .content-menu {
-          margin-bottom: 15px;
-
-          .title-menu {
-            font-size: 24px;
-          }
+          margin-bottom: 1rem;
         }
       }
 
       .btnClose {
-        margin-right: 10px;
+        margin-right: .3rem;
       }
     }
   }

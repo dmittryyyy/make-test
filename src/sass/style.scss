@@ -1,3 +1,4 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import url('https://cdn.rawgit.com/mfd/e7842774e037edf15919037594a79b2b/raw/665bdfc532094318449f1010323c84013d5af953/graphik.css');
 
 * {
@@ -34,10 +35,16 @@ input {
     outline:none;
 }
 
+input[type=text], input[type=submit], textarea{
+	-webkit-appearance: none;
+} 
+
 html,
 body {
     min-height: 100vh;
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    -webkit-text-size-adjust: none;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
     font-family: "Graphik";
@@ -59,7 +66,6 @@ body {
         position: relative;
     }
 }
-
 @import "../sass/block/header.scss";
 @import "../sass/block/title.scss";
 @import "../sass/block/navAndDescription.scss";
@@ -72,4 +78,3 @@ body {
 @import "../sass/block/accordion.scss";
 @import "../sass/block/footer.scss";
 @import "../sass/block/menu.scss";
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";

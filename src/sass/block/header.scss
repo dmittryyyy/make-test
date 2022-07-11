@@ -1,30 +1,32 @@
 header {
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding-top: 2em;
-    margin-bottom: 3.1em;
+    padding-top: 2rem;
+    margin-bottom: 3.1rem;
 }
 
 .header__logo-name {
     display: flex;
+    align-items: center;
 
     .header__logo {
-        width: 2.5em;
-        height: 2.5em;
+        width: 2.5rem;
+        height: 2.5rem;
     }
 
     .header__name {
-        margin-left: 1.5em;
+        margin-left: 1.5rem;
 
         .surname {
-            font-size: .8em;
+            font-size: .8rem;
             font-weight: 600;
+            margin-bottom: .2rem;
         }
 
         .name__patronymic {
             color: #7D7D7D;
-            font-size: .8em;
+            font-size: .8rem;
         }
     }
 }
@@ -37,14 +39,14 @@ header {
 
     .top-menu {
         background-color: black;
-        width: 2em;
-        height: .1em;
-        margin-bottom: .5em;
+        width: 2rem;
+        height: .1rem;
+        margin-bottom: .5rem;
     }
 
     .bottom-menu {
         background-color: black;
-        width: 1.5em;
-        height: .1em;
+        width: 1.5rem;
+        height: .1rem;
     }
 }
