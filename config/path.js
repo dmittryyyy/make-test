@@ -1,8 +1,10 @@
 const pathSrc = './src';
 const pathDest = './public';
+const pathDeploy = './public/**/*';
 
 module.exports = {
     root: pathDest,
+    deploy: pathDeploy,
 
     html: {
         src: pathSrc + '/html/*.html',
