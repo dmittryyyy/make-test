@@ -1,6 +1,6 @@
 <h1>Тестовое задание на должность “Frontend-разработчик”</h1>
 
- Посмотреть документ тестового задания можно <a href="https://docs.google.com/document/d/1n2HXwJYck6sGK5_9Cas-1jERbJLiT-BUTPDK0WNfvIU/edit">тут</a>
+ Посмотреть документацию тестового задания можно <a href="https://docs.google.com/document/d/1n2HXwJYck6sGK5_9Cas-1jERbJLiT-BUTPDK0WNfvIU/edit">тут</a>
 
 <a href="https://dmittryyyy.github.io/make-test/">Результат работы</a>
 ----------------------------------------------------------------------------------------------------------------------------------------------------
